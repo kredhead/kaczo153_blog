@@ -1,0 +1,30 @@
+{% load staticfiles %}
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>k.redhead</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        </head>
+        <body>
+            <div class="page-header">
+                <h1><a href="/">It's  a Poetry Time!</a></h1>
+                <h4>Вы прекрасны хотя бы потому, что Вы здесь.</h4>
+            </div>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <p> Thank you for a comming! We'll glad to see you on our social pages ;)</p>
+                <p>k.redhead 2016</p>
+                <a href="http://vk.com/k.redhead"><img src="https://cdn.tproger.ru/wp-images/vk.png" /></a>
+                <a href="https://twitter.com/"><img src="https://cdn.tproger.ru/wp-images/tw.png" /></a>
+        </body>
+    </html>
